@@ -51,8 +51,8 @@ function parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-source $HOME/dev/projects/dev-from-scratch/bash/bootrc.sh
-export PS1="$(bash.color.green "\u@\h") $(bash.color.blue "\w")$(bash.color.yellow "\$(parse_git_branch)")\n$ "
+# source $HOME/dev/projects/dev-from-scratch/bash/bootrc.sh
+# export PS1="$(bash.color.green "\u@\h") $(bash.color.blue "\w")$(bash.color.yellow "\$(parse_git_branch)")\n$ "
 
-cd
-cd dev/projects/dev-from-scratch
+# cd
+# cd dev/projects/dev-from-scratch
