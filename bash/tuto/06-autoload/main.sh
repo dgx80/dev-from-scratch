@@ -13,7 +13,7 @@ function boot.autoload()
     fi
   
 
-    for file in $namespace/*
+    for file in "$namespace/*"
     do
         if [ -f "$file" ]; then
             source "$file"
